@@ -1,0 +1,29 @@
+.how-work-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../../../public/ce7b1b18359fa1466fc2860526cab5ac824d0ba5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 620px;
+
+}
+
+.how-work-component::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFA800;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#how-it-works {
+    scroll-margin-top: 80px;
+}
