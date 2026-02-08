@@ -3,6 +3,7 @@ import { Header } from "../HeaderComponent/Header";
 import './main.css';
 import { AboutUsComponent } from "./AboutUs/AboutUs";
 import { HowWorkComponent } from "./HowDoesThisWork/HowWorkComponent";
+import { ReviewsComponent } from "./Reviews/Reviews";
 
 export function MainPage() {
   return (
@@ -10,6 +11,7 @@ export function MainPage() {
       <Header></Header>
       <AboutUsComponent></AboutUsComponent>
       <HowWorkComponent></HowWorkComponent>
+      <ReviewsComponent></ReviewsComponent>
       <Footer></Footer>
     </>
   );

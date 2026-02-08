@@ -1,25 +1,18 @@
 import './HowWorkComponent.css';
+import { IconComponent } from './IconComponent.tsx';
+import { PC, HOUSE, WORLD } from './SvgPath.js';
 
 export function HowWorkComponent() { 
     return (
         <div className="how-work-component">
-            <div className=''>
+            <div className='how-work-header'>
                 <h2 className='how-work-title' id='how-it-works'>Как это работает</h2>
-                <button>yзнaть больше</button>
+                <button className='how-work-button'>yзнaть больше</button>
             </div>
-            <div>
-                <div className='how-work-step'>
-                    <img src='' alt='icon-step-1' />
-                    <p className='how-work-text'>Удобный заказ на сайте</p>
-                </div>
-                <div className='how-work-step'>
-                    <img src='' alt='icon-step-1' />
-                    <p className='how-work-text'>Нет необходимости ехать в офис</p>
-                </div>
-                <div className='how-work-step'>
-                    <img src='' alt='icon-step-1' />
-                    <p className='how-work-text'>Огромный выбор направлений</p>
-                </div>
+            <div className='how-work-main'>
+                <IconComponent svgPath={PC} text={'Удобный заказ на сайте'}></IconComponent>
+                <IconComponent svgPath={HOUSE} text={'Нет необходимости ехать в офис'}></IconComponent>
+                <IconComponent svgPath={WORLD} text={'Огромный выбор направлений'}></IconComponent>
             </div>
         </div>
     )

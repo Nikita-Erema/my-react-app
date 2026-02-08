@@ -19,6 +19,10 @@
     margin-top: 0px;
 }
 
+#about-us {
+    scroll-margin-top: 100px;
+}
+
 .about-us-text-box {
     border-left: 3px solid #FFA800;
     display: flex;
