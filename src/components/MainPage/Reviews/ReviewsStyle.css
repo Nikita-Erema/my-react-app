@@ -1,0 +1,76 @@
+.review-box {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.people-list {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+.people-review img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.people-review {
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+	max-width: 420px;
+}
+
+.text-people-review {
+	max-width: 420px;
+}
+
+.name-people-review {
+	margin: 0;
+	font-size: 18px;
+}
+
+.circle-change-review {
+	list-style-type: none;
+	padding-left: 0px;
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.circle-review {
+	text-decoration: none;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background-color: #e5e5e5;
+}
+
+.change-people-review {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px 40px 0px;
+}
+
+.active-circle-review {
+	background-color: #c4c4c4;
+}
+
+.review-title {
+	font-size: 36px;
+	font-weight: 400;
+	margin-left: 100px;
+}
+
+.main-text-people-review {
+	font-size: 16px;
+	font-weight: normal;
+	opacity: 0.5;
+}
