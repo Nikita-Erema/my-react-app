@@ -1,10 +1,14 @@
 import { Footer } from "../FooterComponent/Footer";
-import { NavHeader } from "../HeaderComponent/NavHeader";
+import { Header } from "../HeaderComponent/Header";
+import HeaderSearch from "./HeaderSearch";
+import "./HeaderSearch.css";
 
 export function SelectPage() {
 	return (
 		<>
-			<NavHeader></NavHeader>
+			<Header>
+				<HeaderSearch></HeaderSearch>
+			</Header>
 			<Footer></Footer>
 		</>
 	);
