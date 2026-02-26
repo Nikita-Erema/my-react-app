@@ -5,16 +5,16 @@ export function NavHeader() {
 		<>
 			<h1 className="title-logo">Лого</h1>
 			<nav className="navigation-box">
-				<a className="navigation-item" href="#about-us">
+				<a className="navigation-item" href="/#about-us">
 					O нас
 				</a>
-				<a className="navigation-item" href="#how-it-works">
+				<a className="navigation-item" href="/#how-it-works">
 					Как это работает
 				</a>
-				<a className="navigation-item" href="#reviews">
+				<a className="navigation-item" href="/#reviews">
 					Отзывы
 				</a>
-				<a className="navigation-item" href="#contacts">
+				<a className="navigation-item" href="/#contacts">
 					Контакты
 				</a>
 			</nav>

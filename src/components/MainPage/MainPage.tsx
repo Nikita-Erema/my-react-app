@@ -1,6 +1,7 @@
 import { Footer } from "../FooterComponent/Footer";
 import { Header } from "../HeaderComponent/Header";
 import "./main.css";
+import { MainFormHeader } from "../HeaderComponent/MainFormHeader";
 import { AboutUsComponent } from "./AboutUs/AboutUs";
 import { HowWorkComponent } from "./HowDoesThisWork/HowWorkComponent";
 import { ReviewsComponent } from "./Reviews/ReviewsComponent";
@@ -8,7 +9,9 @@ import { ReviewsComponent } from "./Reviews/ReviewsComponent";
 export function MainPage() {
 	return (
 		<>
-			<Header></Header>
+			<Header>
+				<MainFormHeader />
+			</Header>
 			<AboutUsComponent></AboutUsComponent>
 			<HowWorkComponent></HowWorkComponent>
 			<ReviewsComponent></ReviewsComponent>

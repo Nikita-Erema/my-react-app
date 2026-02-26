@@ -17,9 +17,10 @@ export function ReviewsComponent() {
 
 	return (
 		<div className="review-box">
-			
 			<div>
-				<h1 className="review-title"  id="reviews">отзывы</h1>
+				<h1 className="review-title" id="reviews">
+					отзывы
+				</h1>
 			</div>
 
 			<div className="people-list">

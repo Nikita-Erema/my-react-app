@@ -5,13 +5,13 @@ import NotFound from "./components/NotFound/ErrorNotFound";
 import { SelectPage } from "./components/SearchBiletsPage/SelectPage";
 
 function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/select" element={<SelectPage />} />
-            <Route path="*" element={<NotFound />} />
-        </Routes>
-    );
+	return (
+		<Routes>
+			<Route path="/" element={<MainPage />} />
+			<Route path="/select" element={<SelectPage />} />
+			<Route path="*" element={<NotFound />} />
+		</Routes>
+	);
 }
 
 export default App;
