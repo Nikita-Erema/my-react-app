@@ -11,7 +11,11 @@ export function Header({
 	return (
 		<header
 			className="header-main"
-			style={{ backgroundImage: backgroundImageUrl ? `url(${backgroundImageUrl})` : undefined }}
+			style={{
+				backgroundImage: backgroundImageUrl
+					? `url(${backgroundImageUrl})`
+					: undefined,
+			}}
 		>
 			<NavHeader></NavHeader>
 			<div className="header-box">
