@@ -1,9 +1,18 @@
 import { NavHeader } from "./NavHeader";
 import "./Header.css";
 
-export function Header({ children }: { children: React.ReactNode }) {
+export function Header({
+	children,
+	backgroundImageUrl,
+}: {
+	children: React.ReactNode;
+	backgroundImageUrl?: string;
+}) {
 	return (
-		<header className="header-main">
+		<header
+			className="header-main"
+			style={{ backgroundImage: backgroundImageUrl ? `url(${backgroundImageUrl})` : undefined }}
+		>
 			<NavHeader></NavHeader>
 			<div className="header-box">
 				<div className="box-quote-form-header">
