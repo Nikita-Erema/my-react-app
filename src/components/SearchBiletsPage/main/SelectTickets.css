@@ -1,0 +1,16 @@
+.main-tickets-box {
+	width: 100%;
+	height:	max-content;
+	background-color: #f4edfb;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding: 50px 0px;
+}
+
+.details-box {
+	width: 200px;
+	height: 700px;
+	background-color: #3E3C41;
+}

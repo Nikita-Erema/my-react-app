@@ -1,0 +1,76 @@
+.box-ticket {
+	width: 60%;
+	height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ticket-number-train {
+	width: 20%;
+	height: 100%;
+	background-color: #e4e0e9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ticket {
+	width: 700px;
+	height: 300px;
+	background-color: #fff;
+	box-shadow: 1px 2px #bfbdc1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.ticket-number-train-text {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.ticket-direction-box {
+	width: 50%;
+	height: 300px;
+	border-right: 1px solid #bfbdc1;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.ticket-direction {
+    display: flex;
+	flex-direction: column;
+	gap: 10px;
+    justify-content:  center;
+    align-items: center;
+}
+
+.ticket-direction-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.ticket-direction-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around ;
+}
+
+.ticket-direction-time-text {
+    margin: 0px;
+}
+
+.arrow {
+    color: chocolate;
+    font-weight: bolder;
+    font-size: 20px;
+    box-sizing: border-box;
+}

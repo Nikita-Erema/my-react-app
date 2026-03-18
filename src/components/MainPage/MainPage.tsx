@@ -11,7 +11,7 @@ import { ReviewsComponent } from "./Reviews/ReviewsComponent";
 export function MainPage() {
 	return (
 		<>
-			<Header backgroundImageUrl={bgImage}>
+			<Header backgroundImageUrl={bgImage} text={true}>
 				<MainFormHeader />
 			</Header>
 			<AboutUsComponent></AboutUsComponent>

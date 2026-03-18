@@ -89,8 +89,8 @@
 }
 
 .btn-tickets {
-	background-color: #ffa800;
-	color: #ffffff;
+	background-color: #ff9500;
+	color: #000000;
 	border: none;
 	padding: 12px 30px;
 	font-weight: bold;
@@ -102,7 +102,7 @@
 }
 
 .btn-tickets:hover {
-	background-color: #ff9500;
+	background-color: #eb8900;
 }
 
 .header-box {
