@@ -1,9 +1,9 @@
 .box-ticket {
 	width: 60%;
 	height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
 .ticket-number-train {
@@ -37,40 +37,119 @@
 	border-right: 1px solid #bfbdc1;
 	display: flex;
 	flex-direction: column;
-    justify-content: center;
-    gap: 40px;
+	justify-content: center;
+	gap: 40px;
 }
 
 .ticket-direction {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	gap: 10px;
-    justify-content:  center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .ticket-direction-time {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 }
 
 .ticket-direction-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around ;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-around;
 }
 
 .ticket-direction-time-text {
-    margin: 0px;
+	margin: 0px;
 }
 
 .arrow {
-    color: chocolate;
-    font-weight: bolder;
-    font-size: 20px;
-    box-sizing: border-box;
+	color: chocolate;
+	font-weight: bolder;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+.active-filter {
+	font-weight: 900;
+}
+
+.filter-box {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.filter-count-ticket {
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+.filter {
+	width: 700px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: -16px;
+}
+
+.box-type-seats {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.type-seats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 5px;
+	gap: 5px;
+}
+
+.count-seats {
+	color: #FFA800;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.name-seats {
+	color: #3E3C41;
+	font-weight: 700;
+}
+
+.price-seats {
+	margin: 0px 8px;
+	color: #FFA800;
+	font-weight: 700;
+	font-size: 19px;
+}
+
+.filter-type-ticket-box {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	width: 100%;
+	height: 50px;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.button-choose-ticket {
+	width: 80%;
+	height: 30px;
+	background-color: #FFA800;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	margin:20px 0px 0px 10%;
+	cursor: pointer;
 }

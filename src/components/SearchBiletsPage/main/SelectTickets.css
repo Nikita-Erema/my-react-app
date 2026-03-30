@@ -1,16 +1,109 @@
 .main-tickets-box {
 	width: 100%;
-	height:	max-content;
 	background-color: #f4edfb;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 50px 0px;
 }
 
 .details-box {
 	width: 200px;
-	height: 700px;
-	background-color: #3E3C41;
+	height: max-content;
+	background-color: #3e3c41;
+}
+
+.title-details {
+	color: #ffffff;
+	font-size: 18px;
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+
+.label-details {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 0px 20px;
+}
+
+.input-details {
+	height: 25px;
+}
+
+.item-details {
+	border-bottom: 2px #ffffff solid;
+	padding-bottom: 20px;
+}
+
+.box-checkbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 30px;
+}
+
+.title-switch {
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.switch-input {
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	opacity: 0;
+  	pointer-events: none;
+}	
+
+.checkbox-visibility {
+	display: inline-block;
+  	width: 40px;
+  	height: 10px;
+	background-color: #ffffff;
+  	border-radius: 10px;
+  	cursor: pointer;
+	position: relative;
+	transition: 0.4s;
+}
+
+.switch-input:checked + .checkbox-visibility {
+	background: #FCDC9D;
+}
+
+.circle-checkbox {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: #C4C4C4;
+	transition: 0.4s;
+}
+
+.switch-input:checked + .checkbox-visibility .circle-checkbox {
+	left: 28px;
+	background: #FFA800;
+}
+
+.reverse {
+	transform: rotateZ(180deg);
+}
+
+.box-time-direction {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 20px;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+.text-time-direction {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
 }

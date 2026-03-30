@@ -1,9 +1,17 @@
-import { reverse } from "dns";
 import type { Tickets } from "../../../types/interface";
 import { TicketDiection } from "./TicketDirection";
 import "./Tickets.css";
+import { SeatsTicket } from "./SeatsTicket";
 
-export function Ticket({ number, whereTo, fromWhere, back, whereToTime, fromWhereTime }: Tickets) {
+export function Ticket({
+	number,
+	whereTo,
+	fromWhere,
+	back,
+	whereToTime,
+	fromWhereTime,
+}: Tickets) {
+
 	return (
 		<div className="ticket">
 			<div className="ticket-number-train">
@@ -29,20 +37,20 @@ export function Ticket({ number, whereTo, fromWhere, back, whereToTime, fromWher
 				<TicketDiection
 					fromWhere={fromWhere}
 					whereTo={whereTo}
-                    whereToTime={whereToTime}
-                    fromWhereTime={fromWhereTime}
+					whereToTime={whereToTime}
+					fromWhereTime={fromWhereTime}
 				></TicketDiection>
-                { back && 
-				<TicketDiection
-					fromWhere={fromWhere}
-					whereTo={whereTo}
-					reverse={back}
-                    fromWhereTime={fromWhereTime}
-                    whereToTime={whereToTime}
-				></TicketDiection>
-                }
+				{back && (
+					<TicketDiection
+						fromWhere={fromWhere}
+						whereTo={whereTo}
+						reverse={back}
+						fromWhereTime={fromWhereTime}
+						whereToTime={whereToTime}
+					></TicketDiection>
+				)}
 			</div>
-			<div></div>
+			<SeatsTicket></SeatsTicket>
 		</div>
 	);
 }
