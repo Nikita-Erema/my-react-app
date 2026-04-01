@@ -1,6 +1,7 @@
 import "./Tickets.css";
 import type { Tickets } from "../../../types/interface";
 import { Ticket } from "./Ticket";
+import { SelectTicketPage } from "./SelectTicketsPage";
 
 export function TicketBox() {
 	const filterCount = (e: React.MouseEvent<HTMLParagraphElement>) => {
@@ -103,6 +104,7 @@ export function TicketBox() {
 					back={e?.back}
 				></Ticket>
 			))}
+			<SelectTicketPage></SelectTicketPage>
 		</div>
 	);
 }

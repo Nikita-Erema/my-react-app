@@ -1,22 +1,15 @@
+import { ActiveNav } from "../../../types/interface";
 import "./SearchNav.css";
-export function SearchNavComponent() {
+export function SearchNavComponent({ active }: { active: ActiveNav[] }) {
 	return (
 		<div className="box-checklist">
-			<div
-				className="item-checklist item-checklist-active"
-				style={{ zIndex: 4 }}
-			>
-				Билеты
-			</div>
-			<div className="item-checklist" style={{ zIndex: 3 }}>
-				Пассажиры
-			</div>
-			<div className="item-checklist" style={{ zIndex: 2 }}>
-				Оплата
-			</div>
-			<div className="item-checklist" style={{ zIndex: 1 }}>
-				Проверка
-			</div>
+			{
+				active.map((item, index) => (
+					<div key={index} className={item.class} style={{ zIndex: index-2*index }}>
+						{item.name}
+					</div>
+				))
+			}
 		</div>
 	);
 }

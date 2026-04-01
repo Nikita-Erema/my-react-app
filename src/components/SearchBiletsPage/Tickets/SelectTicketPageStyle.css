@@ -1,0 +1,33 @@
+.box-select-page {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 450px;
+}
+
+.item-select-page {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    display: flex;
+    padding-top: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+
+.item-select-page-active {
+    color: #FFF;
+    background-color: #FFA800;
+    border: 1px solid #FFA800;
+}
+
+.item-select-page:active {
+    color: #FFA800;
+    border: 1px solid #FFA800;
+}

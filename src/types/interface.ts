@@ -28,3 +28,8 @@ export interface TicketType {
 export interface TimeDirectionInt {
 	direction: string
 }
+
+export interface ActiveNav {
+	name: string
+	class: string
+}
